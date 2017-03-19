@@ -1,0 +1,4 @@
+2016-12-09 16:45:13,564 [5] ERROR WebLogger - InitLiveCache() 获取相关信息异常: System.ArgumentException: Keys cannot contain the chars 0x00-0x20 and space.
+   在 BaseClasses.MemcachedBase.EntitiesDefault.Get(String key) 位置 e:\NewProject\妖妖直播\YY.TV\BaseClasses\MemcachedBase\Entities.cs:行号 75
+   在 BaseClasses.CacheHelper.Get(String key) 位置 e:\NewProject\妖妖直播\YY.TV\BaseClasses\CacheHelper.cs:行号 57
+   在 BLL.RoomLiveBLL.GetCacheLiveStatus(String ownerName) 位置 e:\NewProject\妖妖直播\YY.TV\BLL\RoomLiveBLL.cs:行号 77

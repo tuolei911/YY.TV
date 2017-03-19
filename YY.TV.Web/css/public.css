@@ -1,0 +1,160 @@
+/* 
+* @Author: liyulin
+* @Date:   2016-10-31 15:19:42
+* @Last Modified by:   liyulin
+* @Last Modified time: 2016-11-01 16:59:31
+*/
+/*公用部分*/
+body{
+	background-color: #303030;
+	font-family: 微软雅黑;
+}
+.pagement{
+	width:100%;
+	height: 100%;
+	position: relative;
+}
+/*公共蒙版*/
+.model{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 1000;
+}
+.indiving{
+	position: relative;
+}
+.indiving span{
+	display: block;
+	width: 114px;
+	height: 80px;
+	background:url(../images/sctanchuang.png) no-repeat;
+	position: absolute;
+	top:-57px;
+	right:-52px;
+	z-index: 10000;
+	cursor: pointer;
+}
+.indiving span em{
+	width:14px;
+	height: 14px;
+	display:block;
+	position: absolute;
+	bottom:35px;
+	right:15px;
+}
+/*公共蒙版*/
+.nav{
+	width: 100%;
+	height:113px;
+	background-color:#292d32;
+}
+.inNavTab{
+    width: 600px;
+    height: 68px;
+    background-color: #292d32;
+    padding-left: 57px;
+    margin-left: 190px;
+}
+.inNavTab .logo{
+	width:54px;
+	height: 68px;
+	float: left;
+    margin-right: 42px;
+}
+.tabChange_zhibo{
+	display: inline-block;
+	width:218px;
+	height: 68px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+    *position:relative;
+}
+.tabChange_zhibo img{
+	width: 436px;
+	height: 136px;
+	position: relative;
+	left: 0px;
+	top:-68px;
+}
+.tabChange_shiping{
+	display: inline-block;
+	width:218px;
+	height: 68px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+    *position:relative;
+}
+.tabChange_shiping img{
+	width: 436px;
+	height: 136px;
+	position: relative;
+	top:0px;
+	left: -218px;
+}
+.Dividing{
+	width: 100%;
+	height: 45px;
+	background-color: #4c4c4c;
+}
+.main{
+	width: 1010px;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:12px;
+	overflow: hidden;
+	zoom: 1; 
+   
+}
+
+.mainBody{
+	width: 1010px;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:12px;
+	overflow: hidden;
+	zoom: 1; 
+    min-height:960px;
+}
+/*公用部分*/
+
+/*尾部公用*/
+.footer {
+    background: #242424;
+    padding: 20px 0;
+    overflow: hidden;
+    font: 12px \5FAE\8F6F\96C5\9ED1;
+    margin-top: 24px;
+}
+
+.footer .main {
+    width: 983px;
+    margin: 0 auto;
+}
+.link {
+    width: 860px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.link dl dt {
+    float: left;
+}
+.link dl dt img {
+	width:142px;
+	height: 60px;
+    padding: 0 5px;
+}
+.link dl dd {
+    padding: 0px 0 0 10px;
+}
+.link dl dd span {
+    color: #757575;
+    display: block;
+    line-height: 23px;
+}
+.link dl dd a {
+    color: #ddd;
+}

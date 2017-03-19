@@ -1,0 +1,2 @@
+2016-11-02 14:38:34,763 [6] ERROR WebLogger - PageActionRequert.addcomment msg:必须声明标量变量 "@roomId"。
+2016-11-02 14:59:04,128 [12] ERROR WebLogger - PageActionRequert.addcomment msg:指定的转换无效。

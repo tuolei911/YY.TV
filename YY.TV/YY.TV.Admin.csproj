@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40D2B6DC-905D-4828-8D7B-E259AA13FAC0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YY.TV</RootNamespace>
+    <AssemblyName>YY.TV</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Log4Net.config" />
+    <Content Include="Config\MemCached.config" />
+    <Content Include="Content\images\img\flieUpLoad.jpg" />
+    <Content Include="Content\images\img\logo1.png" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\iconfont.eot" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\iconfont.ttf" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\iconfont.woff" />
+    <Content Include="Content\lib\icheck\Thumbs.db" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\README.md" />
+    <Content Include="Content\lib\layer\1.9.3\doc\jquery下载.url" />
+    <Content Include="Content\lib\layer\1.9.3\doc\layer交流.url" />
+    <Content Include="Content\lib\layer\1.9.3\doc\layer官网.url" />
+    <Content Include="Content\lib\layer\2.1\doc\jquery下载.url" />
+    <Content Include="Content\lib\layer\2.1\doc\layer交流.url" />
+    <Content Include="Content\lib\layer\2.1\doc\layer官网.url" />
+    <Content Include="Content\lib\My97DatePicker\skin\Thumbs.db" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE.php" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\icons.psd" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\progress.psd" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\Thumbs.db" />
+    <Content Include="Content\lib\webuploader\0.1.5\README.md" />
+    <Content Include="Content\lib\webuploader\0.1.5\server\fileupload.php" />
+    <Content Include="Content\lib\webuploader\0.1.5\server\fileupload2.php" />
+    <Content Include="Content\lib\webuploader\0.1.5\server\preview.php" />
+    <Content Include="Content\static\h-ui.admin\js\FlashFXP - 快捷方式.lnk" />
+    <Content Include="Content\static\h-ui.admin\skin\blue\Thumbs.db" />
+    <Content Include="Content\static\h-ui.admin\skin\default\Thumbs.db" />
+    <Content Include="Content\static\h-ui.admin\skin\green\Thumbs.db" />
+    <Content Include="Content\static\h-ui.admin\skin\orange\Thumbs.db" />
+    <Content Include="Content\static\h-ui.admin\skin\red\Thumbs.db" />
+    <Content Include="Content\static\h-ui.admin\skin\yellow\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\TVLive.5211game.com.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebService\Page\PageActionRequert.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\lib\bt\bootstrap-modal.js" />
+    <Content Include="Content\lib\bt\bootstrap-modalmanager.js" />
+    <Content Include="Content\lib\bt\modle.css" />
+    <Content Include="Content\lib\datatables\1.10.0\jquery.dataTables.min.js" />
+    <Content Include="Content\lib\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="Content\lib\dropzone\dropzone.css" />
+    <Content Include="Content\lib\dropzone\dropzone.min.js" />
+    <Content Include="Content\lib\expressInstall.swf" />
+    <Content Include="Content\lib\handlebars.js" />
+    <Content Include="Content\lib\html5.js" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\demo.html" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\iconfont.css" />
+    <Content Include="Content\lib\Hui-iconfont\1.0.7\iconfont.svg" />
+    <Content Include="Content\lib\icheck\aero%402x.png" />
+    <Content Include="Content\lib\icheck\aero.png" />
+    <Content Include="Content\lib\icheck\blue%402x.png" />
+    <Content Include="Content\lib\icheck\blue.png" />
+    <Content Include="Content\lib\icheck\green%402x.png" />
+    <Content Include="Content\lib\icheck\green.png" />
+    <Content Include="Content\lib\icheck\grey%402x.png" />
+    <Content Include="Content\lib\icheck\grey.png" />
+    <Content Include="Content\lib\icheck\icheck.css" />
+    <Content Include="Content\lib\icheck\jquery.icheck.min.js" />
+    <Content Include="Content\lib\icheck\minimal%402x.png" />
+    <Content Include="Content\lib\icheck\minimal.png" />
+    <Content Include="Content\lib\icheck\orange%402x.png" />
+    <Content Include="Content\lib\icheck\orange.png" />
+    <Content Include="Content\lib\icheck\pink%402x.png" />
+    <Content Include="Content\lib\icheck\pink.png" />
+    <Content Include="Content\lib\icheck\purple%402x.png" />
+    <Content Include="Content\lib\icheck\purple.png" />
+    <Content Include="Content\lib\icheck\red%402x.png" />
+    <Content Include="Content\lib\icheck\red.png" />
+    <Content Include="Content\lib\icheck\yellow%402x.png" />
+    <Content Include="Content\lib\icheck\yellow.png" />
+    <Content Include="Content\lib\ie-css3.htc" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\demo.html" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-1.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-2.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-3.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-4.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-5.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\b-6.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\iconpic-arrow-up.png" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-1.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-2.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-3.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-4.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-5.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\01\images\s-6.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\02\demo.html" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\02\images\banner-1.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\02\images\banner-2.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\02\images\banner-3.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\03\demo.html" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\demo\03\images\banner-1.jpg" />
+    <Content Include="Content\lib\jquery.SuperSlide\2.1.1\jquery.SuperSlide.min.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\additional-methods.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\additional-methods.min.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\jquery.validate.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\jquery.validate.min.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\messages_zh.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\messages_zh.min.js" />
+    <Content Include="Content\lib\jquery.validation\1.14.0\validate-methods.js" />
+    <Content Include="Content\lib\jquery\1.9.1\jquery.js" />
+    <Content Include="Content\lib\jquery\1.9.1\jquery.min.js" />
+    <Content Include="Content\lib\knockout-3.3.0.js" />
+    <Content Include="Content\lib\layer\1.9.3\demo.html" />
+    <Content Include="Content\lib\layer\1.9.3\extend\layer.ext.js" />
+    <Content Include="Content\lib\layer\1.9.3\layer.js" />
+    <Content Include="Content\lib\layer\1.9.3\skin\default\icon-ext.png" />
+    <Content Include="Content\lib\layer\1.9.3\skin\default\icon.png" />
+    <Content Include="Content\lib\layer\1.9.3\skin\default\loading-0.gif" />
+    <Content Include="Content\lib\layer\1.9.3\skin\default\loading-1.gif" />
+    <Content Include="Content\lib\layer\1.9.3\skin\default\loading-2.gif" />
+    <Content Include="Content\lib\layer\1.9.3\skin\layer.css" />
+    <Content Include="Content\lib\layer\1.9.3\skin\layer.ext.css" />
+    <Content Include="Content\lib\layer\1.9.3\skin\mono\default.png" />
+    <Content Include="Content\lib\layer\1.9.3\skin\mono\style.css" />
+    <Content Include="Content\lib\layer\1.9.3\更新日志.txt" />
+    <Content Include="Content\lib\layer\2.1\demo.html" />
+    <Content Include="Content\lib\layer\2.1\extend\layer.ext.js" />
+    <Content Include="Content\lib\layer\2.1\layer.js" />
+    <Content Include="Content\lib\layer\2.1\skin\default\icon-ext.png" />
+    <Content Include="Content\lib\layer\2.1\skin\default\icon.png" />
+    <Content Include="Content\lib\layer\2.1\skin\default\loading-0.gif" />
+    <Content Include="Content\lib\layer\2.1\skin\default\loading-1.gif" />
+    <Content Include="Content\lib\layer\2.1\skin\default\loading-2.gif" />
+    <Content Include="Content\lib\layer\2.1\skin\layer.css" />
+    <Content Include="Content\lib\layer\2.1\skin\layer.ext.css" />
+    <Content Include="Content\lib\layer\2.1\更新日志.txt" />
+    <Content Include="Content\lib\laypage\1.2\laypage.js" />
+    <Content Include="Content\lib\laypage\1.2\skin\laypage.css" />
+    <Content Include="Content\lib\lazyload\1.9.3\jquery.lazyload.js" />
+    <Content Include="Content\lib\lazyload\1.9.3\jquery.lazyload.min.js" />
+    <Content Include="Content\lib\lazyload\lazyload.js" />
+    <Content Include="Content\lib\lazyload\lazyload.min.js" />
+    <Content Include="Content\lib\My97DatePicker\calendar.js" />
+    <Content Include="Content\lib\My97DatePicker\lang\en.js" />
+    <Content Include="Content\lib\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Content\lib\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Content\lib\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Content\lib\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Content\lib\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Content\lib\My97DatePicker\skin\twoer\datepicker-dev.css" />
+    <Content Include="Content\lib\My97DatePicker\skin\twoer\datepicker.css" />
+    <Content Include="Content\lib\My97DatePicker\skin\twoer\img.gif" />
+    <Content Include="Content\lib\My97DatePicker\skin\twoer\img.png" />
+    <Content Include="Content\lib\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Content\lib\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Content\lib\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Content\lib\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Content\lib\My97DatePicker\WdatePicker.js" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE.htc" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE_IE678.js" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE_IE678_uncompressed.js" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE_IE9.js" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE_IE9_uncompressed.js" />
+    <Content Include="Content\lib\PIE-2.0beta1\PIE_uncompressed.htc" />
+    <Content Include="Content\lib\respond.min.js" />
+    <Content Include="Content\lib\swfobject.js" />
+    <Content Include="Content\lib\SwfUpload\swfupload.js" />
+    <Content Include="Content\lib\SwfUpload\swfupload.swf" />
+    <Content Include="Content\lib\Validform\5.3.2\passwordStrength-min.js" />
+    <Content Include="Content\lib\Validform\5.3.2\Validform.js" />
+    <Content Include="Content\lib\Validform\5.3.2\Validform.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\cropper\cropper.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\cropper\index.html" />
+    <Content Include="Content\lib\webuploader\0.1.5\cropper\uploader.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\expressInstall.swf" />
+    <Content Include="Content\lib\webuploader\0.1.5\image-upload\index.html" />
+    <Content Include="Content\lib\webuploader\0.1.5\image-upload\upload.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\bg.png" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\icons.png" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\image.png" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\progress.png" />
+    <Content Include="Content\lib\webuploader\0.1.5\images\success.png" />
+    <Content Include="Content\lib\webuploader\0.1.5\md5-demo\index.html" />
+    <Content Include="Content\lib\webuploader\0.1.5\md5-demo\script.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\requirejs\app.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\requirejs\index.html" />
+    <Content Include="Content\lib\webuploader\0.1.5\requirejs\require.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\server\crossdomain.xml" />
+    <Content Include="Content\lib\webuploader\0.1.5\Uploader.swf" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.css" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.custom.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.custom.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.fis.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.flashonly.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.flashonly.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.html5only.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.html5only.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.noimage.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.noimage.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.nolog.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.nolog.min.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.withoutimage.js" />
+    <Content Include="Content\lib\webuploader\0.1.5\webuploader.withoutimage.min.js" />
+    <Content Include="Content\static\h-ui.admin\css\H-ui.admin.css" />
+    <Content Include="Content\static\h-ui.admin\css\H-ui.login.css" />
+    <Content Include="Content\static\h-ui.admin\css\style.css" />
+    <Content Include="Content\static\h-ui.admin\images\admin-loginform-bg.png" />
+    <Content Include="Content\static\h-ui.admin\images\loading.gif" />
+    <Content Include="Content\static\h-ui.admin\js\de_DE.txt" />
+    <Content Include="Content\static\h-ui.admin\js\H-ui.admin.js" />
+    <Content Include="Content\static\h-ui.admin\skin\blue\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\blue\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\blue\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\blue\skin.css" />
+    <Content Include="Content\static\h-ui.admin\skin\default\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\default\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\default\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\default\skin.css" />
+    <Content Include="Content\static\h-ui.admin\skin\green\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\green\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\green\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\green\skin.css" />
+    <Content Include="Content\static\h-ui.admin\skin\orange\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\orange\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\orange\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\orange\skin.css" />
+    <Content Include="Content\static\h-ui.admin\skin\red\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\red\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\red\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\red\skin.css" />
+    <Content Include="Content\static\h-ui.admin\skin\yellow\acrossTab-bg.png" />
+    <Content Include="Content\static\h-ui.admin\skin\yellow\acrossTab.png" />
+    <Content Include="Content\static\h-ui.admin\skin\yellow\icon_arrow.png" />
+    <Content Include="Content\static\h-ui.admin\skin\yellow\skin.css" />
+    <Content Include="Content\static\h-ui\css\csshover.htc" />
+    <Content Include="Content\static\h-ui\css\H-ui.css" />
+    <Content Include="Content\static\h-ui\css\H-ui.ie.css" />
+    <Content Include="Content\static\h-ui\css\H-ui.min.css" />
+    <Content Include="Content\static\h-ui\css\H-ui.reset.css" />
+    <Content Include="Content\static\h-ui\css\ie-css3.htc" />
+    <Content Include="Content\static\h-ui\dataTable\sort_asc.png" />
+    <Content Include="Content\static\h-ui\dataTable\sort_both.png" />
+    <Content Include="Content\static\h-ui\dataTable\sort_desc.png" />
+    <Content Include="Content\static\h-ui\js\H-ui.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="RoomDetail.aspx" />
+    <Content Include="RoomList.aspx" />
+    <Content Include="RoomType.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomDetail.aspx.cs">
+      <DependentUpon>RoomDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomDetail.aspx.designer.cs">
+      <DependentUpon>RoomDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoomList.aspx.cs">
+      <DependentUpon>RoomList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomList.aspx.designer.cs">
+      <DependentUpon>RoomList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoomType.aspx.cs">
+      <DependentUpon>RoomType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoomType.aspx.designer.cs">
+      <DependentUpon>RoomType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\Page\PageActionRequert.ashx.cs">
+      <DependentUpon>PageActionRequert.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClasses\BaseClasses.csproj">
+      <Project>{abab905d-2352-4f4b-8985-1d04e48f2a1a}</Project>
+      <Name>BaseClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{da3029e5-7928-4998-b6b7-d2e25ae5fe45}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{c23f4104-194d-4a75-bb6e-0ab3d60bc9a8}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11669/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

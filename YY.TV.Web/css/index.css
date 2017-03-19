@@ -1,0 +1,247 @@
+
+.Dividing .indiving{
+    width:951px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+}
+.Dividing .indiving a{
+	float: right;
+	font-size: 12px;
+	color: #ff6100;
+	line-height:45px;
+}
+.Dividing .indiving a img{
+	width:13px;
+	height: 12px;
+	margin-right:5px;
+	position: relative;
+	top:2px;
+}
+/*左边切换*/
+.inMain_Left{
+	width: 140px;
+	height: 358px;
+	float: left;
+	margin-right: 21px;
+}
+.inMain_Left ul li{
+	width: 140px;
+	height: 58px;
+	background: #3e3e3e;
+	margin-bottom: 2px;
+	line-height: 58px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 200;
+	color: #999999;
+	cursor: pointer;
+}
+.inMain_Left ul li.current{
+	background: #3a89ff;
+	color: #fff;
+}
+/*左边切换*/
+
+/*右边内容*/
+.inMain_Right{
+	width:840px;
+	float: left;
+}
+.inMain_Right ul li{
+	width: 190px;
+	height:232px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 18px;
+	float: left;
+	background-color: #303030;
+}
+.inMain_Right ul li a{
+	width:100%;
+	height: 100%;
+	*display: inline-block;
+    display: inline-block;
+}
+.bannerBg{
+	width: 190px;
+	height: 190px;
+	position: relative;
+}
+.zhibo_zt{
+	width: 54px;
+	height: 19px;
+	background:url(https://img.5211game.com/5211/TVlive/images/zhibo_zt.png);
+	position: absolute;
+	top:4px;
+	right:4px;
+	text-align: center;
+	line-height:19px;
+	color: #00d91a;
+	font-size: 12px;
+}
+.zhibo_zt1{
+    width: 54px;
+	height: 19px;
+	background:url(https://img.5211game.com/5211/TVlive/images/zhibo_zt.png);
+	position: absolute;
+	top:4px;
+	right:4px;
+	text-align: center;
+	line-height:19px;
+	font-size: 12px;
+	color: #bdbdbd;
+}
+.bannerBg .hot{
+	width: 32px;
+	height: 34px;
+	background:url(../images/hot.png) no-repeat;
+	display: inline-block;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.bannerBg img{
+	width: 190px;
+	height: 190px;
+}
+.mb{
+	width:190px;
+	height: 190px;
+	background-color:rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.bannerBg em{
+	width:32px;
+	height: 34px;
+	background:url(../images/hot.png) no-repeat;
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 2;
+}
+.bannerBg span{
+	width:54px;
+	height: 19px;
+	border-radius:19px;
+	line-height: 19px;
+	text-align: center;
+	background-color:#050010;
+	position: absolute;
+	top:5px;
+	right:5px;
+	font-size: 12px;
+	z-index: 2;
+}
+.bannerBg span.gr{
+	color:#00d91a;
+}
+.bannerBg span.gry{
+	color:#666;
+}
+.bannerBg .gameName{
+	position: absolute;
+	bottom:5px;
+	left:7px;
+	font-size: 14px;
+	color: #fff;
+	z-index: 2;
+}
+.tvChange{
+	width: 190px;
+	height: 28px;
+	line-height: 28px;
+}
+.tvChange span.name{
+    width:150px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+	color: #3a89ff;
+	font-size: 14px;
+	float:left;
+}
+.hyTv{
+	width: 17px;
+	height: 16px;
+	float: right;
+	margin-top: 3px;
+}
+.hyTv img{
+	width: 17px;
+	height: 16px;
+}
+.douyu{
+	width: 18px;
+	height: 17px;
+	float: right;
+	margin-top: 3px;
+    *margin-top: 8px;
+}
+.douyu img{
+	width: 18px;
+	height: 17px;
+}
+.xm{
+	width:30px;
+	height: 16px;
+	float: right;
+	margin-top: 3px;
+}
+.xm img{
+	width:30px;
+	height: 16px;
+}
+.infor{
+	width: 190px;
+	height: 14px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align:left;
+	color: #bdbdbd;
+}
+
+.bannerBg .like{
+	font-size: 14px;
+	color: #fff;
+	z-index: 2;
+    position:absolute;bottom:5px;right:7px;
+}
+.bannerBg .like i{
+	width: 13px;
+	height: 12px;
+	display: block;
+	background:url(../images/xin.png);
+	position: absolute;
+	top: 4px;
+	left: -15px;
+	z-index: 2;
+}
+
+.zhibo_zt{
+	width: 54px;
+	height: 19px;
+	background:url(https://img.5211game.com/5211/TVlive/images/zhibo_zt.png);
+	position: absolute;
+	top:4px;
+	right:4px;
+	text-align: center;
+	line-height:19px;
+	color: #00d91a;
+	font-size: 12px;
+}
+.zhibo_zt1{
+	width: 54px;
+	height: 19px;
+	background:url(https://img.5211game.com/5211/TVlive/images/zhibo_zt.png);
+	position: absolute;
+	top:4px;
+	right:4px;
+	text-align: center;
+	line-height:19px;
+	color: #bdbdbd;
+	font-size: 12px;
+}
+
+
